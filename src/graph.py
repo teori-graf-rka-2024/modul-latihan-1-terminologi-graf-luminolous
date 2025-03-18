@@ -1,5 +1,5 @@
 import networkx as nx
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 def create_graph(edges: list[tuple[int, int]]) -> nx.Graph:
     G = nx.Graph()
@@ -18,7 +18,7 @@ def bfs_traversal(G: nx.Graph, start: int) -> list[int]:
 def find_shortest_path(G: nx.Graph, source: int, target: int) -> list[int]:
     return nx.shortest_path(G, source, target)
 
-def visualize_graph(G: nx.Graph) -> None:
-    pos = nx.spring_layout(G)
-    nx.draw(G, pos, with_labels=True, node_color='skyblue', node_size=700)
-    plt.show()
+# def visualize_graph(G: nx.Graph) -> None:
+#     pos = nx.spring_layout(G)
+#     nx.draw(G, pos, with_labels=True, node_color='skyblue', node_size=700)
+#     plt.show()
